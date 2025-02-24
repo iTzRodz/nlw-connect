@@ -15,9 +15,7 @@ export const accessInviteLinkRoute: FastifyPluginAsyncZod = async app => {
           subscriberId: z.string(),
         }),
         response: {
-          201: z.object({
-            subscriberId: string(),
-          }),
+          302: z.null(),
         },
       },
     },
